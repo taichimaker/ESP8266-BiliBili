@@ -1,11 +1,14 @@
 /**********************************************************************
 项目名称/Project          : 零基础入门学用物联网
-程序名称/Program name     : fans_info
+程序名称/Program name     : up_info
 团队/Team                : 太极创客团队 / Taichi-Maker (www.taichi-maker.com)
 作者/Author              : CYNO朔
-日期/Date（YYYYMMDD）     : 初版建立时间20200619
+日期/Date（YYYYMMDD）     : 初版建立时间20200620
 程序目的/Purpose          : 
-使用ESP8266_BiliBili库通过哔哩哔哩API获取粉丝信息（粉丝数量、关注数量、黑名单数量）
+使用ESP8266_BiliBili库通过哔哩哔哩API获取UP主信息
+获取全部视频播放次数: getPlay()   
+获取全部专栏文章阅读次数: getRead()  
+获取全部作品获赞总数: getLikes()
 -----------------------------------------------------------------------
 本程序所属仓库网址
 GitHub: https://github.com/taichi-maker/ESP8266-BiliBili
@@ -45,8 +48,8 @@ void loop(){
     Serial.println(upInfo.getLikes());
   } else {     // 更新失败
     Serial.println("Update Fail...");  
-    Serial.print("Server Response: ");       
-    
+    Serial.print("Server Response: ");   
+	Serial.println(upInfo.getServerCode());    
   }       
   Serial.println(F("======================"));  
   delay(3000);
