@@ -126,25 +126,8 @@ ESP8266-哔哩哔哩库仅仅是我们团队所开发的诸多免费开源项目
 
 太极创客码云：https://gitee.com/taijichuangke
 
-## ESP8266-Seniverse库项目开发人员
+## ESP8266-BiliBili库项目开发人员
 CYNO朔	https://github.com/Cyno-Shuo
-
-
-
-
-
-太极创客团队信息
---------
-
-太极创客官网地址：http://www.taichi-maker.com/
-
-太极创客哔哩哔哩主页：https://space.bilibili.com/103589285
-
-太极创客YouTube：https://www.youtube.com/channel/UC8EkxMr5gGnrb9adVgR-UJw
-
-太极创客GitHub：https://github.com/taichi-maker
-
-太极创客码云：https://gitee.com/taijichuangke
 
 -----------------------------
 
