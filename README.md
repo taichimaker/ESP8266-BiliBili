@@ -61,47 +61,50 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
 ```
 ### 获取用户信息
 
-1. 您可以参考 **example** 目录中的up_info 示例程序了解具体使用方法
+1 您可以参考 **example** 目录中的up_info 示例程序了解具体使用方法
 
-2.  首先通过UpInfo建立对象
-      ```C++
-      UpInfo upInfo("哔哩哔哩用户ID"); 
-      ```
+2 首先通过UpInfo建立对象
+
+  ```C++
+  UpInfo upInfo("哔哩哔哩用户ID"); 
+  ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询UP的用户ID。有关如何获取用户ID的操作方法，可参考以下链接：
-    
-    http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
-    
-3. 使用`update`函数对用户信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
 
-4. 使用下列函数获取UP主信息 
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+
+3 使用`update`函数对用户信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
+
+4 使用下列函数获取UP主信息 
+
 | 函数说明                                       | 函数示例           |
 | ---------------------------------------------- | ------------------ |
 | 获取UP的全部视频播放次数(返回值类型：long)     | `upInfo.getPlay()` |
 | 获取UP的全部专栏文章阅读次数(返回值类型：long) | `upInfo.getRead()` |
 | 获取UP的全部作品获赞总数 (返回值类型：long)    |                    |
 
+5 使用`getServerCode`函数可获取服务器响应状态码。
+当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
 
-
-5. 使用`getServerCode`函数可获取服务器响应状态码。
-   当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
 ```C++
    upInfo.getServerCode()
 ```
 ### 获取视频信息
 
-1. 您可以参考 **example** 目录中的video_info 示例程序了解具体使用方法
+1 您可以参考 **example** 目录中的video_info 示例程序了解具体使用方法
 
-2.  首先通过VideoInfo建立对象
-      ```C++
-      VideoInfo videoInfo("视频BV号"); 
-      ```
+2 首先通过VideoInfo建立对象
+
+  ```C++
+  VideoInfo videoInfo("视频BV号"); 
+  ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询的视频BV号。有关如何获取视频BV号的操作方法，可参考以下链接：
-    
-    http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
-    
-3. 使用`update`函数对视频信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
 
-4. 使用下列函数获取视频信息 
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+
+3 使用`update`函数对视频信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
+
+4 使用下列函数获取视频信息 
+
 | 函数说明                     | 函数示例                  |
 | ---------------------------- | ------------------------- |
 | 视频播放量(返回值类型：long) | `videoInfo.getPlay()`     |
@@ -113,8 +116,9 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
 | 点赞次数(返回值类型：long)   | `videoInfo.getLikes()`    |
 |                              |                           |
 
-5. 使用`getServerCode`函数可获取服务器响应状态码。
-   当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
+5 使用`getServerCode`函数可获取服务器响应状态码。
+当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
+
 ```C++
    videoInfo.getServerCode()
 ```
