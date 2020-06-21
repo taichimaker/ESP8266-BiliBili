@@ -1,0 +1,29 @@
+#######################################
+# ESP8266-哔哩哔哩库 关键字
+# ESP8266-BiliBili Library Keywords
+# 太极创客 / www.taichi-maker.com
+#######################################
+
+#######################################
+# 数据类型/Datatypes (KEYWORD1)
+#######################################
+
+FansInfo			KEYWORD1
+UpInfo			KEYWORD1
+VideoInfo			KEYWORD1
+
+#######################################
+# 函数/Functions (KEYWORD2)
+#######################################
+ESP8266_Seniverse	KEYWORD2
+getFansNumber		KEYWORD2
+getFollowing		KEYWORD2
+getBlack			KEYWORD2
+getPlay				KEYWORD2
+getRead				KEYWORD2
+getLikes			KEYWORD2
+getDanmu			KEYWORD2
+getReply			KEYWORD2
+getFavorite			KEYWORD2
+getCoin				KEYWORD2
+getShare			KEYWORD2
