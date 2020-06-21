@@ -5,12 +5,14 @@
 作者/Author              : CYNO朔
 日期/Date（YYYYMMDD）     : 初版建立时间20200619
 程序目的/Purpose          : 
-使用ESP8266_BiliBili库通过哔哩哔哩API获取粉丝信息（粉丝数量、关注数量、黑名单数量）
+使用ESP8266_BiliBili库通过哔哩哔哩API获取粉丝信息
+UP有多少个粉丝数量(long getFansNumber)
+UP关注了多少个B站UP主的数量(int getFollowing)
+UP的黑名单数量(int getBlack)
 -----------------------------------------------------------------------
 本程序所属仓库网址
 GitHub: https://github.com/taichi-maker/ESP8266-BiliBili
-Gitee: https://gitee.com/taijichuangke/ESP8266-BiliBili
-                             
+Gitee: https://gitee.com/taijichuangke/ESP8266-BiliBili                     
 ***********************************************************************/
 #include <ESP8266WiFi.h>
 #include "ESP8266_BiliBili.h"
@@ -28,11 +30,9 @@ void setup(){
   Serial.println("");
 
   connectWiFi();    // 连接wifi
-  
 }
  
 void loop(){
-
   if(fansInfo.update()){  // 更新信息成功   
     Serial.println("Update OK"); 
     Serial.print("Server Response: ");  

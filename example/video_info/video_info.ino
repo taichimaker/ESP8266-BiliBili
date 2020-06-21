@@ -24,7 +24,7 @@ Gitee: https://gitee.com/taijichuangke/ESP8266-BiliBili
 
 const char* ssid     = "taichimaker"; // 连接WiFi名（此处使用taichimaker为示例）
                                       // 请将您需要连接的WiFi名填入引号中
-const char* password = "ZAQ1xsw2cde3VFR4";    // 连接WiFi密码（此处使用12345678为示例）
+const char* password = "12345678";    // 连接WiFi密码（此处使用12345678为示例）
                                       // 请将您需要连接的WiFi密码填入引号中
 
 VideoInfo videoInfo("BV1L7411c7jw");       // 建立对象用于获取粉丝信息
