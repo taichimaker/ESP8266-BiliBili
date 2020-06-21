@@ -27,7 +27,7 @@ const char* ssid     = "taichimaker"; // 连接WiFi名（此处使用taichimaker
 const char* password = "12345678";    // 连接WiFi密码（此处使用12345678为示例）
                                       // 请将您需要连接的WiFi密码填入引号中
 
-VideoInfo videoInfo("BV1L7411c7jw");       // 建立对象用于获取粉丝信息
+VideoInfo videoInfo("XXXXXXXXX");     // 建立对象用于获取视频信息
                                       // 括号中的参数是B站的UUID
 void setup(){
   Serial.begin(9600);          
@@ -52,9 +52,7 @@ void loop(){
     Serial.print("Tou Bi: "); 
     Serial.println(videoInfo.getCoin());  
     Serial.print("Fen Xiang: "); 
-    Serial.println(videoInfo.getShare());        
-    Serial.print("Fen Xiang: "); 
-    Serial.println(videoInfo.getShare());     
+    Serial.println(videoInfo.getShare());            
     Serial.print("Huo Zan: "); 
     Serial.println(videoInfo.getLikes());           
   } else {     // 更新失败
