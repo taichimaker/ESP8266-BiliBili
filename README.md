@@ -32,27 +32,30 @@ ESP8266-哔哩哔哩库仅仅是我们团队所开发的诸多免费开源项目
 
 ### 获取粉丝信息
 
-1. 您可以参考 **example** 目录中的fans_info 示例程序了解具体使用方法
+1 您可以参考 **example** 目录中的fans_info 示例程序了解具体使用方法
 
-2.  首先通过FansInfo建立对象
-      ```C++
-      FansInfo fansInfo("BiliBili用户ID");
-      ```
+2 首先通过FansInfo建立对象
+
+  ```C++
+  FansInfo fansInfo("BiliBili用户ID");
+  ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询UP的用户ID。有关如何获取用户ID的操作方法，可参考以下链接：
-    
-    http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
-    
-3. 使用`update`函数对粉丝信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
 
-4. 使用下列函数获取具体UP主的粉丝信息 
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+
+3 使用`update`函数对粉丝信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。
+
+4 使用下列函数获取具体UP主的粉丝信息 
+
 | 函数说明                                      | 函数示例                   |
 | --------------------------------------------- | -------------------------- |
 | UP有多少个粉丝数量(返回值类型：long)          | `fansInfo.getFansNumber()` |
 | UP关注了多少个B站UP主的数量 (返回值类型：int) | `fansInfo.getFollowing()`  |
 | UP的黑名单数量 (返回值类型：int)              | `fansInfo.getBlack()`      |
 
-5. 使用`getServerCode`函数可获取服务器响应状态码。
-   当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
+5 使用`getServerCode`函数可获取服务器响应状态码。
+当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
+
 ```C++
    fansInfo.getServerCode()
 ```
