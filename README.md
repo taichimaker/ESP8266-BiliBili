@@ -9,7 +9,7 @@
 2. UP信息（UP的全部视频播放数、UP的全部专栏文章阅读数、UP的全部作品获赞数）
 3. 视频播放信息（视频播放量、弹幕数量、收藏数量、投币量、分享次数、点赞次数）
 
-假如您想要制作一款类似我们太极创客团队[小凯](https://gitee.com/xiaoxiaokai)开发的哔哩哔哩网络天气时钟小电视](https://gitee.com/taijichuangke/bilibili_weather_clock)，就可以利用这款ESP8266库。
+假如您想要制作一款类似我们太极创客团队[小凯](https://gitee.com/xiaoxiaokai)开发的[哩哔哩网络天气时钟小电视](https://gitee.com/taijichuangke/bilibili_weather_clock)，就可以利用这款ESP8266库。
 
 ## 关于本库
 
