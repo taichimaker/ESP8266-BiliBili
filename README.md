@@ -41,7 +41,7 @@ ESP8266-哔哩哔哩库仅仅是我们团队所开发的诸多免费开源项目
   ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询UP的用户ID。有关如何获取用户ID的操作方法，可参考以下链接：
 
-http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibil-api-tutorial/esp8266-bilibili-api/
 
 3 使用`update`函数对粉丝信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。
 
@@ -70,7 +70,7 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
   ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询UP的用户ID。有关如何获取用户ID的操作方法，可参考以下链接：
 
-http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibil-api-tutorial/esp8266-bilibili-api/
 
 3 使用`update`函数对用户信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
 
@@ -99,7 +99,7 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
   ```
 以上语句中括号里的参数为字符串类型。参数内容是被查询的视频BV号。有关如何获取视频BV号的操作方法，可参考以下链接：
 
-http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibili-api/
+http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibil-api-tutorial/esp8266-bilibili-api/
 
 3 使用`update`函数对视频信息进行更新（此函数返回值为`bool`型。在ESP8266成功连接哔哩哔哩API服务器并且服务器返回响应状态码为`200`时，此函数将会返回真，否则会返回假。）
 
