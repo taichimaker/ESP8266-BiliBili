@@ -9,7 +9,7 @@
 2. UP信息（UP的全部视频播放数、UP的全部专栏文章阅读数、UP的全部作品获赞数）
 3. 视频播放信息（视频播放量、弹幕数量、收藏数量、投币量、分享次数、点赞次数）
 
-假如您想要制作一款类似我们太极创客团队[小凯](https://gitee.com/xiaoxiaokai)开发的哔哩哔哩网络天气时钟小电视](https://gitee.com/taijichuangke/bilibili_weather_clock)，就可以利用这款ESP8266库。
+假如您想要制作一款类似我们太极创客团队[小凯](https://gitee.com/xiaoxiaokai)开发的[哩哔哩网络天气时钟小电视](https://gitee.com/taijichuangke/bilibili_weather_clock)，就可以利用这款ESP8266库。
 
 ## 关于本库
 
@@ -80,7 +80,7 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
 | ---------------------------------------------- | ------------------ |
 | 获取UP的全部视频播放次数(返回值类型：long)     | `upInfo.getPlay()` |
 | 获取UP的全部专栏文章阅读次数(返回值类型：long) | `upInfo.getRead()` |
-| 获取UP的全部作品获赞总数 (返回值类型：long)    |                    |
+| 获取UP的全部作品获赞总数 (返回值类型：long)    | `upInfo.getLikes()` |
 
 5 使用`getServerCode`函数可获取服务器响应状态码。
 当用户向服务器发送的请求存在问题时，服务器会通过响应状态码告知用户问题的具体原因。您可以通过该响应状态码判断具体问题原因。该函数返回值为int型。
