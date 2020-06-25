@@ -28,7 +28,7 @@ const char* password = "12345678";    // 连接WiFi密码（此处使用12345678
                                       // 请将您需要连接的WiFi密码填入引号中
 
 VideoInfo videoInfo("XXXXXXXXX");     // 建立对象用于获取视频信息
-                                      // 括号中的参数是B站的UUID
+                                      // 括号中的参数是视频的BV号
 void setup(){
   Serial.begin(9600);          
   Serial.println("");

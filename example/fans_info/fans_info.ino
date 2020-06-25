@@ -23,7 +23,7 @@ const char* password = "12345678";    // 连接WiFi密码（此处使用12345678
                                       // 请将您需要连接的WiFi密码填入引号中
 
 FansInfo fansInfo("XXXXXXXXX");       // 建立对象用于获取粉丝信息
-                                      // 括号中的参数是B站的UUID
+                                      // 括号中的参数是UP主的ID号
 
 void setup(){
   Serial.begin(9600);          
