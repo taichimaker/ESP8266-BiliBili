@@ -131,9 +131,9 @@ http://www.taichi-maker.com/homepage/iot-development/iot-platform/esp8266-bilibi
 
 太极创客YouTube：https://www.youtube.com/channel/UC8EkxMr5gGnrb9adVgR-UJw
 
-太极创客GitHub：https://github.com/taichi-maker
+太极创客GitHub：https://github.com/taichimaker
 
-太极创客码云：https://gitee.com/taijichuangke
+太极创客码云：https://gitee.com/taichimaker
 
 ## ESP8266-BiliBili库项目开发人员
 CYNO朔	https://github.com/Cyno-Shuo
